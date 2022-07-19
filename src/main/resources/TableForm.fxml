@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="521.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableFormController">
+   <children>
+      <TableView fx:id="tblCustomers" layoutX="20.0" layoutY="209.0" prefHeight="289.0" prefWidth="560.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <columns>
+            <TableColumn prefWidth="106.0" text="ID" />
+            <TableColumn minWidth="5.0" prefWidth="212.0" text="Address" />
+            <TableColumn prefWidth="229.0" text="Name" />
+         </columns>
+      </TableView>
+      <VBox layoutX="20.0" layoutY="15.0" spacing="9.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="170.0">
+         <children>
+            <Label text="Customer ID:" />
+            <TextField fx:id="txtId" prefHeight="26.0" prefWidth="410.0" promptText="EX: C001" />
+            <Label text="Customer Name:" />
+            <TextField fx:id="txtName" prefHeight="26.0" prefWidth="410.0" promptText="EX: Naween" />
+            <Label text="Customer Address" />
+            <TextField fx:id="txtAddress" prefHeight="26.0" prefWidth="410.0" promptText="EX: Alawwa" />
+         </children>
+      </VBox>
+      <Button fx:id="btnSave" layoutX="450.0" layoutY="78.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="129.0" text="Save Customer" AnchorPane.rightAnchor="21.0" />
+      <Button fx:id="btnNew" layoutX="450.0" layoutY="41.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="129.0" style="-fx-background-color: green;" text="New Customer" textFill="WHITE" AnchorPane.rightAnchor="21.0" />
+      <Button fx:id="btnDelete" layoutX="450.0" layoutY="112.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="129.0" style="-fx-background-color: red;" text="Delete Customer" AnchorPane.rightAnchor="21.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>
